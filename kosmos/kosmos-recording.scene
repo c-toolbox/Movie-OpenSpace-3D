@@ -1,0 +1,38 @@
+asset.require('./anders')
+
+asset.onInitialize(function ()
+    local list = openspace.getProperty('{planetTrail_solarSystem}.Renderable.Enabled');
+    for _,v in pairs(list) do openspace.setPropertyValueSingle(v, not openspace.getPropertyValue(v)) end
+    local moonlist = openspace.getProperty('{moonTrail_solarSystem}.Renderable.Enabled');
+    for _,v in pairs(moonlist) do openspace.setPropertyValueSingle(v, not openspace.getPropertyValue(v)) end
+
+    openspace.setPropertyValueSingle('Dashboard.IsEnabled', false);
+    openspace.setPropertyValueSingle("RenderEngine.ShowLog", false);
+    openspace.setPropertyValueSingle("RenderEngine.ShowVersion", false);
+    openspace.setPropertyValueSingle("RenderEngine.ShowCamera", false)
+    openspace.setPropertyValueSingle("RenderEngine.DisableMasterRendering", false)
+    openspace.setPropertyValueSingle("RenderEngine.MasterRotation", {0.0,0.0,0.0})
+    openspace.setPropertyValueSingle("Scene.C2019Y4AtlasTrail.Renderable.Enabled", false)
+    openspace.setPropertyValueSingle("Scene.ISS_trail.Renderable.Enabled", true)
+    
+
+openspace.setPropertyValueSingle('Scene.gps-ops.Renderable.Appearance.LineWidth', 4.0)
+openspace.setPropertyValueSingle('Scene.geo.Renderable.Appearance.LineWidth', 3.0)
+openspace.setPropertyValueSingle('Scene.MercuryTrail.Renderable.Appearance.LineWidth', 13.0)
+openspace.setPropertyValueSingle('Scene.VenusTrail.Renderable.Appearance.LineWidth', 13.0)
+openspace.setPropertyValueSingle('Scene.EarthTrail.Renderable.Appearance.LineWidth', 13.0)
+openspace.setPropertyValueSingle('Scene.MarsTrail.Renderable.Appearance.LineWidth', 13.0)
+openspace.setPropertyValueSingle('Scene.JupiterTrail.Renderable.Appearance.LineWidth', 13.0)
+openspace.setPropertyValueSingle('Scene.SaturnTrail.Renderable.Appearance.LineWidth', 13.0)
+openspace.setPropertyValueSingle('Scene.NeptuneTrail.Renderable.Appearance.LineWidth', 13.0)
+openspace.setPropertyValueSingle('Scene.UranusTrail.Renderable.Appearance.LineWidth', 13.0)
+openspace.setPropertyValueSingle('Scene.PlutoTrail.Renderable.Appearance.LineWidth', 13.0)
+openspace.setPropertyValueSingle('Scene.MoonTrail.Renderable.Appearance.LineWidth', 13.0)
+openspace.setPropertyValueSingle('Scene.Stars.Renderable.ParametersOwner.MagnitudeExponent', 6.61)
+openspace.setPropertyValueSingle('Scene.Constellations.Renderable.LineWidth', 4.0)
+openspace.setPropertyValueSingle('Scene.SloanDigitalSkySurvey.Renderable.ScaleFactor', 515.899597)
+
+
+
+
+end)

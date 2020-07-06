@@ -1,0 +1,5 @@
+OpenSpace_record/playback00.85A
+script 1616.47 0.0 643842152.185 1 openspace.setPropertyValueSingle("NavigationHandler.OrbitalNavigator.FollowAnchorNodeRotationDistance", 0.010000);openspace.setPropertyValueSingle("Scene.ISS_trail.Renderable.Enabled", false)
+camera 1616.47 0.0 643842152.185 -199380.0875854 56123.8130627 -309737.7858658 0.3408741 -0.8928228 -0.1754922 0.2363785 8.0512682e-06 - ISS
+script 1616.47 0.0 643842152.1985 1 openspace.time.setPause(true); openspace.setPropertyValueSingle("Scene.ISS_trail.Renderable.Enabled", false); openspace.setPropertyValueSingle("Scene.Earth.Scale.Scale", 0.0);
+script 1616.47 96.0 643842152.1985 1 openspace.setPropertyValueSingle("Scene.Earth.Scale.Scale", 1.0, 4.0);

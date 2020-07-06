@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<Cluster masterAddress="localhost">
+  <!-- <Capture range-begin="0" range-end="43000" /> -->
+  <Node address="localhost" port="20401">
+    <Window fullScreen="false" name="OpenSpace">
+      <Stereo type="dummy" />
+      <Size x="1024" y="1024" />
+      <Res x="4096" y="4096" />
+      <Viewport name="fisheye">
+        <Pos x="0.0" y="0.0" />
+        <Size x="1.0" y="1.0" />
+        <FisheyeProjection fov="180" quality="2k"  tilt="63.0">
+          <Background r="0.0" g="0.0" b="0.0" a="1.0" />
+        </FisheyeProjection>
+      </Viewport>
+    </Window>
+  </Node>
+  <User eyeSeparation="0.06">
+    <Pos x="0.0" y="0.0" z="0.0" />
+  </User>
+</Cluster>
