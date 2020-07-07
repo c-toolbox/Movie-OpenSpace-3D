@@ -129,10 +129,7 @@ files = [
     '0-introduction',
     0,
     0,
-    [
-      'openspace.time.setDeltaTime(1)',
-       'openspace.setPropertyValueSingle("Scene.ISS_trail.Renderable.Enabled", true)'
-    ]
+    []
   ),
   FileInfo(
     '1-earth',

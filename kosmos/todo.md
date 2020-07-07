@@ -1,4 +1,5 @@
 # V1
+ - Tilt a bit too high
  - ISS near clipping
  - Near earth asteroids deltatime problem when starting up and turning down
  - Asteroid trails visible at earths limb even if transparent
@@ -8,6 +9,7 @@
  - Transition of earthrise image low fps
  - Earth blurrry and not as bright when comparing to Earthrise image
  - Apollo insignias low res?
+ - Apollo 17 height map is disabled
  - Apollo trav map transition not visible / fades in immediately (needs to be loaded before, or fade is eaten up by waiting for loading)
  - Switch of heightmap on mars is visible 
  - Fade-in of asteroids strange
@@ -33,21 +35,19 @@
 
 # V2
 ## Fixes
- - Tilt a bit too high
- - ISS trail off 500 ms earlier
+ - ISS trail off 500 ms earlier   +
  - Maybe follow camera mode value wrong? (Maybe too high)
  - Zoom out to GPS Jumps position
- - Earthrise image too high up
+ - Earthrise image too high up +
  - Small jump after jump out from Apollo 8
- - Apollo 17 landing is in wrong location
- - Apollo 17 height map is disabled
- - Apollo 17 images too high up
- - Station 6 image not full resolution
- - Mars should have maximum level of detail
- - Asteroids have to be disabled directly after fade out
- - Milkyway volune downscaling factor too low
- - Quasars were not disabled
- - Quasars should be a bit more transparent (maybe scale a bit lower)
+ - Apollo 17 landing is in wrong location -
+ - Apollo 17 images too high up +
+ - Station 6 image not full resolution +
+ - Mars should have maximum level of detail +
+ - Asteroids have to be disabled directly after fade out +
+ - Milkyway volune downscaling factor too low +
+ - Quasars were not disabled +
+ - Quasars should be a bit more transparent (maybe scale a bit lower) +
 
 OpenSpace general needs a distance based map switching; not level based
 Deltatime interpolation doesn’t work if the framerate is low?
