@@ -5,7 +5,7 @@ from PIL import Image
 
 import common
 
-desc = 'Applies a fading-to-black animation to a subset of images in an image sequence'
+desc = 'Applies a fading-from-black animation to a subset of images in an image sequence'
 
 parser = argparse.ArgumentParser(description=desc, epilog='')
 parser.add_argument('folder', metavar='<folder>', type=str, help='Location of the frames')
@@ -22,7 +22,7 @@ for f in files:
     continue
 
   t = (f.original_index - files[args.start].original_index) / (files[args.end].original_index - files[args.start].original_index)
-  t_inv = 1.0 - t
+  t_inv = t
 
   print('Image {} * {}'.format(f.path, t_inv))
   if not args.dryrun:

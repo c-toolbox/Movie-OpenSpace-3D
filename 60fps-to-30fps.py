@@ -4,7 +4,7 @@ import shutil
 
 import common
 
-desc = 'Renames a bunch of files keeping their indices fixed'
+desc = 'Converts a 60fps input image sequence to 30fps by removing every second image'
 
 parser = argparse.ArgumentParser(description=desc, epilog='')
 parser.add_argument('folder', metavar='<folder>', type=str, help='Location of the frames')
