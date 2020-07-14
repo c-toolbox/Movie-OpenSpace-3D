@@ -1,0 +1,13 @@
+python 60fps-to-30fps.py e:\screenshots\title\L
+python compress_frame_numbers.py e:\screenshots\title\L
+python 60fps-to-30fps.py e:\screenshots\title\R
+python compress_frame_numbers.py e:\screenshots\title\R
+python rename_files.py e:\screenshots\title\L OpenSpace_R_{:06d}.png
+python rename_files.py e:\screenshots\title\R OpenSpace_L_{:06d}.png
+python insert_space.py E:\screenshots\title\L 165 25 --duplicate-last-frame
+python insert_space.py E:\screenshots\title\R 165 25 --duplicate-last-frame
+python insert_space.py E:\screenshots\title\L 324 636  --duplicate-last-frame
+python insert_space.py E:\screenshots\title\R 324 636  --duplicate-last-frame
+python insert_space.py E:\screenshots\openspace-4k-63tilt-750lift-v2-source\L 0 960
+python insert_space.py E:\screenshots\openspace-4k-63tilt-750lift-v2-source\R 0 960
+

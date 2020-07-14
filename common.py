@@ -32,7 +32,7 @@ def verify_files(files):
   indices = []
   for f in files:
     if f.original_index in indices:
-      raise Exception('Duplicate index found {}'.format(f.original_index))
+      raise Exception('Duplicate index found {} ({})'.format(f.original_index, f.path))
     indices.append(f.original_index)
   indices = None
 
