@@ -11,3 +11,25 @@ python insert_space.py E:\screenshots\title\R 324 636  --duplicate-last-frame
 python insert_space.py E:\screenshots\openspace-4k-63tilt-750lift-v2-source\L 0 960
 python insert_space.py E:\screenshots\openspace-4k-63tilt-750lift-v2-source\R 0 960
 
+python insert_space.py credits\L 0 10
+python duplicate_frame.py credits/L 0 10
+python insert_space.py credits/L 11 480
+python duplicate_frame.py credits/L 11 480
+python duplicate_frame.py credits/L 492 540
+python fade_from_black.py credits\L 11 41
+python fade_to_black.py credits\L 461 491
+python fade_from_black.py credits\L 491 521
+python fade_to_black.py credits\L 942 1032
+python duplicate_frame.py credits\L 1032 1000
+
+
+python insert_space.py credits\R 0 10
+python duplicate_frame.py credits/R 0 10
+python insert_space.py credits/R 11 480
+python duplicate_frame.py credits/R 11 480
+python duplicate_frame.py credits/R 492 540
+python fade_from_black.py credits\R 11 41
+python fade_to_black.py credits\R 461 491
+python fade_from_black.py credits\R 491 521
+python fade_to_black.py credits\R 942 1032
+python duplicate_frame.py credits\R 1032 1000
